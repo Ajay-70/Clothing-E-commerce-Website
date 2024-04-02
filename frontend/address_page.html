@@ -1,0 +1,1208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <!--FONT AWESOME-->
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!--GOOGLE FONTS-->
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <section id="header">
+      <a href="#"
+        ><img src="img/logo (2).png" height="50" class="logo" alt="" srcset=""
+      /></a>
+      <div>
+        <ul id="navbar">
+          <li class="active"><a href="index.html"></a>Home</li>
+          <li><a href="shop.html"></a>shop</li>
+          <li><a href="blog.html"></a>blog</li>
+          <li><a href="about.html"></a>about</li>
+          <li><a href="contact.html"></a>contact</li>
+          <li id="lg-bag"><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <a href="#" id="close"><i class="fa-sharp fa-solid fa-xmark"></i> </i></a>
+          <li class="btnLongin-popup"><button>Login</button></li>
+        </ul>
+      </div>
+    </section>
+    
+      <div id="mobile">
+        <a href="cart.html"></a><i class="fa-solid fa-cart-shopping"></i>
+        <i id="bar" class="fa-sharp fa-solid fa-bars"></i>
+      </div>
+    </section>
+    <!-- main page banner  -->
+    <form id="address-ui-checkout-form" method="post" action="">
+      <!-- <div id="address-ui-widgets-enterAddressFormContainer" data-csa-c-content-id="address-ui-widgets-enterAddressFormContainer-content-id-IN" data-csa-c-slot-id="address-ui-widgets-enterAddressFormContainer-slot-id-IN" data-csa-c-type="widget" class="a-section celwidget" data-csa-c-id="59r5dd-tjz9tr-al6jsu-ys5wgt" data-cel-widget="address-ui-widgets-enterAddressFormContainer">
+        <h2 class="a-spacing-none">Add a new address</h2>
+        <div id="address-ui-widgets-DetectLocationButtonContainer" class="a-section a-spacing-mini a-spacing-top-small">
+          <div class="a-box address-ui-widgets-detect-my-location-button-box-container-desktop">
+            <div class="a-box-inner">
+              <div class="a-section">
+                <div class="a-row" role="row">
+                  <div class="a-column a-span9 a-text-center">
+                    <div class="a-section a-spacing-top-mini"><span class="a-text-bold">Save time. Autofill your current location.</span></div>
+                  </div>
+                  <div class="a-column a-span3 a-text-right a-span-last"><span id="address-ui-widgets-DetectLocationButton" class="a-button a-button-base address-ui-widgets-detect-my-location-button-container-desktop"><span class="a-button-inner"><button id="address-ui-widgets-DetectLocationButton-announce" name="address-ui-widgets-DetectLocationButton" class="a-button-text" type="button">
+                          <div class="a-section a-text-center address-ui-widgets-desktop-button-text"><span class="address-ui-widgets-desktop-button-text">Autofill</span></div>
+                        </button></span></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!-- <div id="address-ui-widgets-ErrorAlert" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+            <div class="a-alert-content">
+              <div class="a-section">Hmm. We could not find your device’s location. Please enter the address manually.</div>
+            </div>
+          </div>
+        </div>
+        <div id="address-ui-widgets-ErrorUserPermissionDeniedAlert" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+          <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+            <div class="a-alert-content">
+              <div class="a-section">Hmm. We could not detect your location. Please grant amazon.com location permission in your browser</div>
+            </div>
+          </div>
+        </div><span class="a-declarative" data-action="a-modal" data-a-modal="{&quot;name&quot;:&quot;address-ui-widgets-location-error-popover&quot;}"></span>
+        <div class="a-popover-preload" id="a-popover-address-ui-widgets-location-error-popover">
+          <p>Hmm. We could not find your device’s location. Please enter it manually.</p><a id="address-ui-widgets-location-detection-error-touch-link" href="#" class="a-touch-link a-box a-spacing-small cloned-touch-link-unique-id-class aok-offscreen">
+            <div class="a-box-inner"><i class="a-icon a-icon-touch-link"></i><span id="address-ui-widgets-location-detection-error-touch-link-text"></span></div>
+          </a><span class="a-declarative" data-action="a-popover-close" data-a-popover-close="{}"><span id="address-ui-widgets-location-detection-error-ok-button" class="a-button a-button-base"><span class="a-button-inner"><input name="address-ui-widgets-location-detection-error-ok-button" class="a-button-input" type="submit" aria-labelledby="address-ui-widgets-location-detection-error-ok-button-announce" style=""><span id="address-ui-widgets-location-detection-error-ok-button-announce" class="a-button-text" aria-hidden="true">OK</span></span></span></span>
+        </div><span class="a-declarative" data-action="a-modal" data-a-modal="{&quot;name&quot;:&quot;address-ui-widgets-location-permission-denied-error&quot;}"></span>
+        <div class="a-popover-preload" id="a-popover-address-ui-widgets-location-permission-denied-error">
+          <p>Hmm. We could not detect your location. Please ensure device's location is enabled in settings.</p><a id="address-ui-widgets-location-detection-error-touch-link" href="#" class="a-touch-link a-box a-spacing-small cloned-touch-link-unique-id-class aok-offscreen">
+            <div class="a-box-inner"><i class="a-icon a-icon-touch-link"></i><span id="address-ui-widgets-location-detection-error-touch-link-text"></span></div>
+          </a><span class="a-declarative" data-action="a-popover-close" data-a-popover-close="{}"><span id="address-ui-widgets-location-detection-error-ok-button" class="a-button a-button-base"><span class="a-button-inner"><input name="address-ui-widgets-location-detection-error-ok-button" class="a-button-input" type="submit" aria-labelledby="address-ui-widgets-location-detection-error-ok-button-announce" style=""><span id="address-ui-widgets-location-detection-error-ok-button-announce" class="a-button-text" aria-hidden="true">OK</span></span></span></span>
+        </div> -->
+        <div id="address-ui-widgets-SpinnerContainer" class="a-section">
+          <div id="address-ui-widgets-Spinner" class="a-spinner-wrapper aok-hidden"><span class="a-spinner a-spinner-medium"></span></div>
+        </div>
+        <script type="a-state" data-a-state="{&quot;key&quot;:&quot;address-ui-widgets-location-button-view&quot;}">{"address-ui-widgets-mshop-location-permission-alert-feature-name":"Amazon","address-ui-widgets-device-location-error-ok-button":"OK","address-ui-widgets-mshop-location-permission-alert-description":"Your current location will be used to assist in adding a new address to your Amazon address book.","address-ui-widgets-device-location-permission-fetching":"Hmm. We could not detect your location. Please ensure device's location is enabled in settings.","address-ui-widgets-location-detection-result":"{}","address-ui-widgets-desktop-device-location-permission-fetching":"Hmm. We could not detect your location. Please grant amazon.com location permission in your browser","address-ui-widgets-device-location-error-alert-description":"Hmm. We could not find your device’s location. Please enter it manually."}</script>
+        <div class="a-row">
+          <div class="a-input-text-group a-spacing-medium a-spacing-top-medium">
+            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+              <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-countryCode-dropdown-nativeId" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Country/Region</span></label></div>
+            </div>
+            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container"><span class="a-dropdown-container"><select name="address-ui-widgets-countryCode" autocomplete="off" id="address-ui-widgets-countryCode-dropdown-nativeId" tabindex="0" class="a-native-dropdown a-spacing-none a-declarative" aria-label="Country/Region" style="width: 96%;" aria-pressed="false">
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Aland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+                  <option value="AS">American Samoa</option>
+                  <option value="AD">Andorra</option>
+                  <option value="AO">Angola</option>
+                  <option value="AI">Anguilla</option>
+                  <option value="AQ">Antarctica</option>
+                  <option value="AG">Antigua and Barbuda</option>
+                  <option value="AR">Argentina</option>
+                  <option value="AM">Armenia</option>
+                  <option value="AW">Aruba</option>
+                  <option value="AU">Australia</option>
+                  <option value="AT">Austria</option>
+                  <option value="AZ">Azerbaijan</option>
+                  <option value="BS">Bahamas, The</option>
+                  <option value="BH">Bahrain</option>
+                  <option value="BD">Bangladesh</option>
+                  <option value="BB">Barbados</option>
+                  <option value="BY">Belarus</option>
+                  <option value="BE">Belgium</option>
+                  <option value="BZ">Belize</option>
+                  <option value="BJ">Benin</option>
+                  <option value="BM">Bermuda</option>
+                  <option value="BT">Bhutan</option>
+                  <option value="BO">Bolivia</option>
+                  <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                  <option value="BA">Bosnia and Herzegovina</option>
+                  <option value="BW">Botswana</option>
+                  <option value="BV">Bouvet Island</option>
+                  <option value="BR">Brazil</option>
+                  <option value="IO">British Indian Ocean Territory</option>
+                  <option value="BN">Brunei Darussalam</option>
+                  <option value="BG">Bulgaria</option>
+                  <option value="BF">Burkina Faso</option>
+                  <option value="BI">Burundi</option>
+                  <option value="KH">Cambodia</option>
+                  <option value="CM">Cameroon</option>
+                  <option value="CA">Canada</option>
+                  <option value="IC">Canary Islands</option>
+                  <option value="CV">Cape Verde</option>
+                  <option value="KY">Cayman Islands</option>
+                  <option value="CF">Central African Republic</option>
+                  <option value="TD">Chad</option>
+                  <option value="CL">Chile</option>
+                  <option value="CN">China</option>
+                  <option value="CX">Christmas Island</option>
+                  <option value="CC">Cocos (Keeling) Islands</option>
+                  <option value="CO">Colombia</option>
+                  <option value="KM">Comoros</option>
+                  <option value="CG">Congo</option>
+                  <option value="CD">Congo, Democratic Republic of</option>
+                  <option value="CK">Cook Islands</option>
+                  <option value="CR">Costa Rica</option>
+                  <option value="HR">Croatia</option>
+                  <option value="CW">Curaçao</option>
+                  <option value="CY">Cyprus</option>
+                  <option value="CZ">Czech Republic</option>
+                  <option value="DK">Denmark</option>
+                  <option value="DJ">Djibouti</option>
+                  <option value="DM">Dominica, Commonwealth of</option>
+                  <option value="DO">Dominican Republic</option>
+                  <option value="TL">East Timor</option>
+                  <option value="EC">Ecuador</option>
+                  <option value="EG">Egypt</option>
+                  <option value="SV">El Salvador</option>
+                  <option value="GQ">Equatorial Guinea</option>
+                  <option value="ER">Eritrea</option>
+                  <option value="EE">Estonia</option>
+                  <option value="ET">Ethiopia</option>
+                  <option value="FK">Falkland Islands</option>
+                  <option value="FO">Faroe Islands</option>
+                  <option value="FJ">Fiji</option>
+                  <option value="FI">Finland</option>
+                  <option value="FR">France</option>
+                  <option value="GF">French Guiana</option>
+                  <option value="PF">French Polynesia</option>
+                  <option value="TF">French Southern Territories</option>
+                  <option value="GA">Gabon</option>
+                  <option value="GM">Gambia, The</option>
+                  <option value="GE">Georgia</option>
+                  <option value="DE">Germany</option>
+                  <option value="GH">Ghana</option>
+                  <option value="GI">Gibraltar</option>
+                  <option value="GR">Greece</option>
+                  <option value="GL">Greenland</option>
+                  <option value="GD">Grenada</option>
+                  <option value="GP">Guadeloupe</option>
+                  <option value="GU">Guam</option>
+                  <option value="GT">Guatemala</option>
+                  <option value="GG">Guernsey</option>
+                  <option value="GN">Guinea</option>
+                  <option value="GW">Guinea-Bissau</option>
+                  <option value="GY">Guyana</option>
+                  <option value="HT">Haiti</option>
+                  <option value="HM">Heard Island and the McDonald Islands</option>
+                  <option value="VA">Holy See</option>
+                  <option value="HN">Honduras</option>
+                  <option value="HK">Hong Kong</option>
+                  <option value="HU">Hungary</option>
+                  <option value="IS">Iceland</option>
+                  <option value="IN">India</option>
+                  <option value="ID">Indonesia</option>
+                  <option value="IQ">Iraq</option>
+                  <option value="IE">Ireland, Republic of</option>
+                  <option value="IM">Isle of Man</option>
+                  <option value="IL">Israel</option>
+                  <option value="IT">Italy</option>
+                  <option value="CI">Ivory Coast (Côte D'ivoire)</option>
+                  <option value="JM">Jamaica</option>
+                  <option value="JP">Japan</option>
+                  <option value="JE">Jersey</option>
+                  <option value="JO">Jordan</option>
+                  <option value="KZ">Kazakhstan</option>
+                  <option value="KE">Kenya</option>
+                  <option value="KI">Kiribati</option>
+                  <option value="KR">Korea, Republic of</option>
+                  <option value="XK">Kosovo</option>
+                  <option value="KW">Kuwait</option>
+                  <option value="KG">Kyrgyzstan</option>
+                  <option value="LA">Lao, People's Democratic Republic</option>
+                  <option value="LV">Latvia</option>
+                  <option value="LB">Lebanon</option>
+                  <option value="LS">Lesotho</option>
+                  <option value="LR">Liberia</option>
+                  <option value="LY">Libya</option>
+                  <option value="LI">Liechtenstein</option>
+                  <option value="LT">Lithuania</option>
+                  <option value="LU">Luxembourg</option>
+                  <option value="MO">Macao</option>
+                  <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+                  <option value="MG">Madagascar</option>
+                  <option value="MW">Malawi</option>
+                  <option value="MY">Malaysia</option>
+                  <option value="MV">Maldives</option>
+                  <option value="ML">Mali</option>
+                  <option value="MT">Malta</option>
+                  <option value="MH">Marshall Islands</option>
+                  <option value="MQ">Martinique</option>
+                  <option value="MR">Mauritania</option>
+                  <option value="MU">Mauritius</option>
+                  <option value="YT">Mayotte</option>
+                  <option value="MX">Mexico</option>
+                  <option value="FM">Micronesia, Federated States of</option>
+                  <option value="MD">Moldova, Republic of</option>
+                  <option value="MC">Monaco</option>
+                  <option value="MN">Mongolia</option>
+                  <option value="ME">Montenegro</option>
+                  <option value="MS">Montserrat</option>
+                  <option value="MA">Morocco</option>
+                  <option value="MZ">Mozambique</option>
+                  <option value="MM">Myanmar</option>
+                  <option value="NA">Namibia</option>
+                  <option value="NR">Nauru</option>
+                  <option value="NP">Nepal</option>
+                  <option value="NL">Netherlands</option>
+                  <option value="AN">Netherlands Antilles</option>
+                  <option value="NC">New Caledonia</option>
+                  <option value="NZ">New Zealand</option>
+                  <option value="NI">Nicaragua</option>
+                  <option value="NE">Niger</option>
+                  <option value="NG">Nigeria</option>
+                  <option value="NU">Niue</option>
+                  <option value="NF">Norfolk Island</option>
+                  <option value="MP">Northern Mariana Islands</option>
+                  <option value="NO">Norway</option>
+                  <option value="OM">Oman</option>
+                  <option value="PK">Pakistan</option>
+                  <option value="PW">Palau</option>
+                  <option value="PS">Palestinian Territories</option>
+                  <option value="PA">Panama</option>
+                  <option value="PG">Papua New Guinea</option>
+                  <option value="PY">Paraguay</option>
+                  <option value="PE">Peru</option>
+                  <option value="PH">Philippines</option>
+                  <option value="PN">Pitcairn</option>
+                  <option value="PL">Poland</option>
+                  <option value="PT">Portugal</option>
+                  <option value="PR">Puerto Rico</option>
+                  <option value="QA">Qatar</option>
+                  <option value="RE">Reunion</option>
+                  <option value="RO">Romania</option>
+                  <option value="RU">Russian Federation</option>
+                  <option value="RW">Rwanda</option>
+                  <option value="BL">Saint Barthelemy</option>
+                  <option value="SH">Saint Helena, Ascension and Tristan da Cunha</option>
+                  <option value="KN">Saint Kitts and Nevis</option>
+                  <option value="LC">Saint Lucia</option>
+                  <option value="MF">Saint Martin</option>
+                  <option value="PM">Saint Pierre and Miquelon</option>
+                  <option value="VC">Saint Vincent and the Grenadines</option>
+                  <option value="WS">Samoa</option>
+                  <option value="SM">San Marino</option>
+                  <option value="ST">Sao Tome and Principe</option>
+                  <option value="SA">Saudi Arabia</option>
+                  <option value="SN">Senegal</option>
+                  <option value="RS">Serbia</option>
+                  <option value="SC">Seychelles</option>
+                  <option value="SL">Sierra Leone</option>
+                  <option value="SG">Singapore</option>
+                  <option value="SX">Sint Maarten</option>
+                  <option value="SK">Slovakia</option>
+                  <option value="SI">Slovenia</option>
+                  <option value="SB">Solomon Islands</option>
+                  <option value="SO">Somalia</option>
+                  <option value="ZA">South Africa</option>
+                  <option value="GS">South Georgia and the South Sandwich Islands</option>
+                  <option value="ES">Spain</option>
+                  <option value="LK">Sri Lanka</option>
+                  <option value="SR">Suriname</option>
+                  <option value="SJ">Svalbard and Jan Mayen</option>
+                  <option value="SZ">Swaziland</option>
+                  <option value="SE">Sweden</option>
+                  <option value="CH">Switzerland</option>
+                  <option value="TW">Taiwan</option>
+                  <option value="TJ">Tajikistan</option>
+                  <option value="TZ">Tanzania, United Republic of</option>
+                  <option value="TH">Thailand</option>
+                  <option value="TG">Togo</option>
+                  <option value="TK">Tokelau</option>
+                  <option value="TO">Tonga</option>
+                  <option value="TT">Trinidad and Tobago</option>
+                  <option value="TN">Tunisia</option>
+                  <option value="TR">Turkey</option>
+                  <option value="TM">Turkmenistan</option>
+                  <option value="TC">Turks and Caicos Islands</option>
+                  <option value="TV">Tuvalu</option>
+                  <option value="UG">Uganda</option>
+                  <option value="UA">Ukraine</option>
+                  <option value="AE">United Arab Emirates</option>
+                  <option value="GB">United Kingdom</option>
+                  <option value="US"  selected="">United States</option>
+                  <option value="UM">United States Minor Outlying Islands</option>
+                  <option value="UY">Uruguay</option>
+                  <option value="UZ">Uzbekistan</option>
+                  <option value="VU">Vanuatu</option>
+                  <option value="VE">Venezuela</option>
+                  <option value="VN">Vietnam</option>
+                  <option value="VG">Virgin Islands, British</option>
+                  <option value="VI">Virgin Islands, US</option>
+                  <option value="WF">Wallis and Futuna</option>
+                  <option value="EH">Western Sahara</option>
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option>
+                </select><span tabindex="-1" id="address-ui-widgets-countryCode" data-a-class="address-ui-widgets-desktop-form-field-full-width" class="a-button a-button-dropdown a-spacing-none  address-ui-widgets-desktop-form-field-full-width" aria-hidden="true" style="min-width: 0.414634%;"><span class="a-button-inner"><span class="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true"><span class="a-dropdown-prompt">India</span></span><i class="a-icon a-icon-dropdown"></i></span></span></span>
+              <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                <div id="address-ui-widgets-addr-form-switch-alert-box" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Unable to change country, please try again</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+              <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-enterAddressFullName" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Full name (First and Last name)</span></label></div>
+            </div>
+            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container"><input type="text" maxlength="50" id="address-ui-widgets-enterAddressFullName" name="address-ui-widgets-enterAddressFullName" spellcheck="false" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input" aria-label="Full name (First and Last name)" style="width: 96%;">
+              <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                <div id="address-ui-widgets-full-name-offensive-words-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Inappropriate words in Name are not allowed. Please enter correct Name.</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="address-ui-widgets-full-name-special-characters-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Full first and last name are required. No numbers or special characters (@, #, !).</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="address-ui-widgets-full-name-titles-warning" class="a-box a-alert-inline a-alert-inline-warning aok-hidden">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">To prevent delivery issues, enter your full first and last name. No initials or titles (Dr, Ms, likewise).</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+              <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-enterAddressPhoneNumber" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Mobile number</span></label></div>
+              <div class="a-section aok-inline-block address-ui-widgets-desktop-form-right-aligned-popover-trigger"><span class="a-declarative" data-action="a-popover" data-a-popover="{&quot;inlineContent&quot;:&quot;May be used to assist delivery&quot;,&quot;closeButton&quot;:false,&quot;content&quot;:&quot;May be used to assist delivery&quot;,&quot;header&quot;:&quot;More information&quot;,&quot;position&quot;:&quot;triggerTop&quot;}"><a href="javascript:void(0)" class="a-popover-trigger a-declarative"><span class="a-size-base">Why?</span><i class="a-icon a-icon-popover"></i></a></span></div>
+            </div>
+            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container"><input type="text" maxlength="10" id="address-ui-widgets-enterAddressPhoneNumber" name="address-ui-widgets-enterAddressPhoneNumber" spellcheck="false" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input" aria-label="Mobile number" style="width: 96%;">
+              <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                <div id="address-ui-widgets-phone-number-insufficient-chars-warning" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Entered phone number has insufficient characters</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="address-ui-widgets-phone-number-non-numeric-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Entered phone number has non-numeric characters</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="address-ui-widgets-phone-number-invalid-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Please enter a valid mobile number</div>
+                    </div>
+                  </div>
+                </div>
+                <div id="address-ui-widgets-address-voice-invalid-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Please ensure that only numeric digits are entered should the driver need to phone ahead of delivery. “+” at the start is allowed.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+              <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-enterAddressPostalCode" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Pincode</span></label></div>
+            </div>
+            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container"><input type="text" maxlength="6" id="address-ui-widgets-enterAddressPostalCode" placeholder="6 digits [0-9] PIN code" name="address-ui-widgets-enterAddressPostalCode" spellcheck="false" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input" aria-label="Pincode" style="width: 96%;">
+              <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                <div id="address-ui-widgets-postalcode-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                    <div class="a-alert-content">
+                      <div class="a-section">Please enter a valid ZIP or postal code.</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+              <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-enterAddressLine1" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Flat, House no., Building, Company, Apartment</span></label></div>
+            </div>
+            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-field-container-fixed-height"><input type="text" maxlength="60" id="address-ui-widgets-enterAddressLine1" name="address-ui-widgets-enterAddressLine1" spellcheck="false" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input" autocomplete="address-ui-widgets-enterAddressLine1" aria-label="Flat, House no., Building, Company, Apartment" style="width: 96%;"></div>
+            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+              <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-enterAddressLine2" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Area, Street, Sector, Village</span></label></div>
+            </div>
+            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container address-ui-widgets-field-container-fixed-height"><input type="text" maxlength="60" id="address-ui-widgets-enterAddressLine2" name="address-ui-widgets-enterAddressLine2" spellcheck="false" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input" autocomplete="address-ui-widgets-enterAddressLine2" aria-label="Area, Street, Sector, Village" style="width: 96%;"></div>
+            <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+              <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-landmark" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Landmark</span></label></div>
+            </div>
+            <div class="a-section a-spacing-base adddress-ui-widgets-form-field-container"><input type="text" maxlength="60" id="address-ui-widgets-landmark" placeholder="E.g. near apollo hospital" name="address-ui-widgets-landmark" spellcheck="false" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input" aria-label="Landmark" style="width: 96%;"></div>
+            <div class="a-row address-ui-widgets-mobile-two-column-form-field-view-grid-row">
+              <div class="a-column a-span6">
+                <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+                  <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-enterAddressCity" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Town/City</span></label></div>
+                </div>
+                <div class="a-section a-spacing-none adddress-ui-widgets-form-field-container"><input type="text" maxlength="50" id="address-ui-widgets-enterAddressCity" name="address-ui-widgets-enterAddressCity" spellcheck="false" class="a-input-text address-ui-widgets-desktop-form-field-full-width addrui-form-text-input" autocomplete="address-ui-widgets-enterAddressCity" aria-label="Town/City" style="width: 96%;">
+                  <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                    <div id="address-ui-widgets-inline-city-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                      <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                        <div class="a-alert-content">
+                          <div class="a-section">Please enter a city name.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="a-column a-span6 a-span-last">
+                <div class="a-section a-spacing-none adddress-ui-widgets-form-field-label-container">
+                  <div class="a-section a-spacing-none aok-inline-block"><label for="address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId" class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">State</span></label></div>
+                </div>
+                <div class="a-section a-spacing-none adddress-ui-widgets-form-field-container"><span class="a-dropdown-container"><select name="address-ui-widgets-enterAddressStateOrRegion" autocomplete="off" id="address-ui-widgets-enterAddressStateOrRegion-dropdown-nativeId" tabindex="0" class="a-native-dropdown a-spacing-none a-declarative" aria-label="State" aria-pressed="false" style="width: 96%;"><option class="a-prompt" value="">Select</option><option value="AL">Alabama</option><option value="AK">Alaska</option><option value="AS">American Samoa</option><option value="AZ">Arizona</option><option value="AR">Arkansas</option><option value="CA">California</option><option value="CO">Colorado</option><option value="CT">Connecticut</option><option value="DE">Delaware</option><option value="DC">District of Columbia</option><option value="FM">Federated States of Micronesia</option><option value="FL">Florida</option><option value="GA">Georgia</option><option value="GU">Guam</option><option value="HI">Hawaii</option><option value="ID">Idaho</option><option value="IL">Illinois</option><option value="IN">Indiana</option><option value="IA">Iowa</option><option value="KS">Kansas</option><option value="KY">Kentucky</option><option value="LA">Louisiana</option><option value="ME">Maine</option><option value="MH">Marshall Islands</option><option value="MD">Maryland</option><option value="MA">Massachusetts</option><option value="MI">Michigan</option><option value="MN">Minnesota</option><option value="MS">Mississippi</option><option value="MO">Missouri</option><option value="MT">Montana</option><option value="NE">Nebraska</option><option value="NV">Nevada</option><option value="NH">New Hampshire</option><option value="NJ">New Jersey</option><option value="NM">New Mexico</option><option value="NY">New York</option><option value="NC">North Carolina</option><option value="ND">North Dakota</option><option value="MP">Northern Mariana Islands</option><option value="OH">Ohio</option><option value="OK">Oklahoma</option><option value="OR">Oregon</option><option value="PW">Palau</option><option value="PA">Pennsylvania</option><option value="PR">Puerto Rico</option><option value="RI">Rhode Island</option><option value="SC">South Carolina</option><option value="SD">South Dakota</option><option value="TN">Tennessee</option><option value="TX">Texas</option><option value="UT">Utah</option><option value="VT">Vermont</option><option value="VI">Virgin Islands</option><option value="VA">Virginia</option><option value="WA">Washington</option><option value="WV">West Virginia</option><option value="WI">Wisconsin</option><option value="WY">Wyoming</option><option value="AA">Armed Forces - AA</option><option value="AE">Armed Forces - AE</option><option value="AP">Armed Forces - AP</option></select><span tabindex="-1" id="address-ui-widgets-enterAddressStateOrRegion" data-a-class="address-ui-widgets-desktop-form-field-full-width" class="a-button a-button-dropdown a-spacing-none  address-ui-widgets-desktop-form-field-full-width" aria-hidden="true" style="min-width: 0%;"><span class="a-button-inner"><span class="a-button-text a-declarative" data-action="a-dropdown-button" role="button" aria-hidden="true"><span class="a-dropdown-prompt">Choose a state</span></span><i class="a-icon a-icon-dropdown"></i></span></span></span>
+                  <div class="a-section a-spacing-none a-spacing-top-micro address-ui-widgets-inline-error-alert">
+                    <div id="address-ui-widgets-inline-state-or-region-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+                      <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                        <div class="a-alert-content">
+                          <div class="a-section">Please enter a state, region or province.</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><input type="hidden" name="address-ui-widgets-previous-address-form-state-token" value="eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.awwJs5iejMcwEEIf3ninqYQ-puDZRAmh8nvcZhlysQhpBVgAxxyJGQ.FpQC2gwI52bPJn3n.ww-HRvHn2hQTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHT_DulNmTnxAqU6V0mdb0ekVyxTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHuBXUEZ4rqdGUEUXMZJVj8tiI1OURTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuH8bWUtZBCwo5GYcyDXHa3mTOPuvbeKwuc1-V68O1HL6SGcvSq9xcJ-kofIB0YF-GXzZ4bo6bPS9-z7fUzb6iQ8Os5AoVlM0WQs4ZttfMjjtRwk_yXsiFepCteCaX9T4Eh-NKkqrS7OJNvfrwyZ-Iu4yaufTEWuFSWj16N1JoiNaZQy4_O-lrLirvRJSpmyU1h5DTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHNELxyld9fg.IOJaMtHx0lLWeZ-tuDw5cA" style="">
+        <div data-a-input-name="address-ui-widgets-use-as-my-default" class="a-checkbox address-ui-widgets-checkbox-view  a-spacing-medium"><label for="address-ui-widgets-use-as-my-default"><input id="address-ui-widgets-use-as-my-default" type="checkbox" name="address-ui-widgets-use-as-my-default" value="true" aria-label="Make this my default address"><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label"><span class="a-size-base">Make this my default address</span></span></label></div>
+        <div class="a-section a-spacing-none aok-inline-block"><label class="a-form-label address-ui-widgets-desktop-form-field-full-width a-nowrap"><span class="a-size-base">Delivery instructions (optional)</span></label></div>
+        <div aria-live="polite" data-a-expander-name="address-ui-widgets-delivery-instructions-desktop-expander" class="a-row a-expander-container a-expander-inline-container address-ui-widgets-desktop-delivery-instructions-expander"><a href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-inline-header a-link-expander" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}"><i class="a-icon a-icon-collapse"></i><span class="a-expander-prompt"><span>Add preferences, notes, access codes and more</span></span></a>
+          <div aria-expanded="true" class="a-expander-content address-ui-widgets-desktop-delivery-instructions-expander-content a-expander-inline-content a-expander-inner a-expander-content-expanded" style="overflow: hidden;">
+            <div class="a-section"><input type="hidden" name="address-ui-widgets-delivery-instructions-desktop-expander-context" value="{&quot;deliveryInstructionsDisplayMode&quot; : &quot;CDP_ONLY&quot;, &quot;deliveryInstructionsClientName&quot; : &quot;RetailWebsite&quot;, &quot;deliveryInstructionsDeviceType&quot; : &quot;desktop&quot;, &quot;deliveryInstructionsIsEditAddressFlow&quot; : &quot;false&quot;}" style="">
+              <div id="address-ui-widgets-delivery-instructions-desktop-widget-html-container" class="a-section a-spacing-top-mini">
+                <meta name="referrer" content="strict-origin-when-cross-origin">
+  
+                <div class="a-row">
+                  <div class="a-row a-grid-vertical-align a-grid-center">
+                    <div class="a-row ma-cdp-form"><span class="a-size-base a-color-base"></span>
+                      <input type="hidden" name="ingressPointType" value="ADD_ADDRESS_FORM_RetailWebsite" id="ingressPointType">
+                      <input type="hidden" name="deviceType" value="desktop" id="deviceType">
+                      <input type="hidden" name="horizonteDeviceType" value="desktop" id="horizonteDeviceType">
+                      <input type="hidden" name="cdpViewId" value="delivery-instructions-cdpViewId" id="cdpViewId">
+                      <input type="hidden" name="deliveryInstructionsViewMode" value="CDP_ONLY" id="deliveryInstructionsViewMode"><!-- Property type in variable as obtained from AAS, can be blank as well. -->
+                      <!-- These values are picked by deliveryProfileBuilder while doing a save call. -->
+                      <input type="hidden" name="" id="ma-old-saved-property-type"><input type="hidden" name="" value="false" id="ma-isLockerAvailable"><input type="hidden" name="cdpCustomerId" value="A36H3VQHM26XMV" id="cdpCustomerId"><input type="hidden" name="cdpInteractionId" value="35c52cd8-dca5-4dab-8d3e-6aec7a233b2a" id="cdpInteractionId"><input type="hidden" name="cdpCountryCode" value="IN" id="cdpCountryCode"><input type="hidden" name="cdpAddressId" id="cdpAddressId"><input type="hidden" name="cdpIngressPointType" value="ADD_ADDRESS_FORM_RetailWebsite" id="cdpIngressPointType">
+                      <div class="a-row a-spacing-micro ma-selected-property-type aok-hidden"><span class="a-size-base a-color-base">Address Type</span><span class="a-size-base a-color-base">:</span><span class="a-size-base a-color-base ma-saved-property-type-text a-text-bold">House</span><span class="a-declarative" data-action="property-type-edit-link-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-property-type-edit-link-action" data-property-type-edit-link-action="{}" data-csa-c-id="lvf2t-8vzvwr-nsmxgv-5fwgmr"><a class="a-link-normal ma-property-type-edit-link" href="#">Edit</a></span></div>
+                      <div class="a-row a-spacing-micro ma-property-type-selector">
+                        <div class="a-row a-spacing-micro"><span class="a-size-base a-color-base a-text-bold">Please select an address type</span></div><span class="a-declarative" data-action="property-type-change-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-property-type-change-action" data-property-type-change-action="{}" data-csa-c-id="aytn7p-f4s8hm-1q4te9-8kqlb2">
+                          <div class="a-row">
+  
+                            <span class="a-button a-button-normal a-button-toggle a-button-small ma-property-type-button ma-house-type-button a-button-selected" aria-checked="true"><span class="a-button-inner"><button aria-label="House" class="a-button-text a-text-center" type="button" value="HOUSE">
+                                  House
+                                </button></span></span>
+  
+                            <span class="a-button a-button-normal a-button-toggle a-button-small ma-property-type-button ma-apartment-type-button" aria-checked="false"><span class="a-button-inner"><button aria-label="Apartment" class="a-button-text a-text-center" type="button" value="APARTMENT">
+                                  Apartment
+                                </button></span></span>
+  
+                            <span class="a-button a-button-normal a-button-toggle a-button-small ma-property-type-button ma-business-type-button" aria-checked="false"><span class="a-button-inner"><button aria-label="Business" class="a-button-text a-text-center" type="button" value="BUSINESS">
+                                  Business
+                                </button></span></span>
+  
+                            <span class="a-button a-button-normal a-button-toggle a-button-small ma-property-type-button ma-other-type-button" aria-checked="false"><span class="a-button-inner"><button aria-label="Other" class="a-button-text a-text-center" type="button" value="OTHER">
+                                  Other
+                                </button></span></span>
+                          </div>
+                        </span><!-- Description about the property type selected. These will by default be all invisible. -->
+                        <div class="a-row a-spacing-top-micro ma-cdp-pt-description ma-cdp-pt-description-house"><span class="a-size-base a-color-secondary">Independent house, villa, or builder floor (7 AM - 9 PM delivery)</span></div>
+                        <div class="a-row a-spacing-top-micro aok-hidden ma-cdp-pt-description ma-cdp-pt-description-apartment"><span class="a-size-base a-color-secondary">Gated society, flats, or condominiums (7 AM - 9 PM delivery)</span></div>
+                        <div class="a-row a-spacing-top-micro ma-cdp-pt-description ma-cdp-pt-description-business aok-hidden"><span class="a-size-base a-color-secondary">Office, retail store, hotel, hospital, malls, etc (10 AM - 6 PM delivery)</span></div>
+                        <div class="a-row a-spacing-top-micro aok-hidden ma-cdp-pt-description ma-cdp-pt-description-other"><span class="a-size-base a-color-secondary">Other accommodations like hostel, PG, farmhouse, etc. (10 AM - 6 PM delivery)</span></div>
+                      </div><!-- In case if no property type is obtained from AAS, then options for the default property type should be shown if available else OTHER type should be shown. -->
+                      <div aria-live="polite" class="a-section ma-property-type-form-block ma-house-form-block ma-form-section-without-spacing" aria-hidden="false">
+                        <!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="preferred_delivery_locations_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="myuo31-2vvkwe-y87oll-8tucl"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Select your do not disturb delivery preference</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner a-expander-content-expanded" style="overflow: hidden; display: none;">
+                            <div class="a-row">
+                              <div class="a-row ma-personalised-cdp-pdl-options"><span class="a-declarative" data-action="preferred-delivery-location" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-preferred-delivery-location" data-preferred-delivery-location="{}" data-csa-c-id="wvkf17-wnarqz-ahad2r-ixwau1">
+                                  <!-- This is to support the requirement where selected option should always come on top -->
+                                  <!-- All remaining options which are eligible for given property type comes here -->
+  
+                                  <div data-a-input-name="preferredDeliveryLocationHOUSE" class="a-radio ma-pdl-safe-location-FRONTDOOR ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationHOUSE" value="FRONTDOOR"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Front door
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationHOUSE" class="a-radio ma-pdl-safe-location-MAILBOX ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationHOUSE" value="MAILBOX"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Mailbox
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationHOUSE" class="a-radio ma-pdl-safe-location-SECURITY_DESK ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationHOUSE" value="SECURITY_DESK"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        With a security guard
+                                      </span></label></div><!-- If property type is empty or it is OTHER then show no Preferred Button here -->
+                                  <div data-a-expander-name="ma-pdl-show-more-option" class="a-row a-expander-container a-expander-extend-container">
+                                    <div class="a-row">
+                                      <div aria-expanded="false" class="a-expander-content a-expander-extend-content" style="display:none">
+                                        <!-- Each items which are not eligible goes here along with No preference button -->
+  
+                                        <div data-a-input-name="preferredDeliveryLocationHOUSE" class="a-radio ma-pdl-safe-location-MAILROOM preferred-delivery-location-option-collapsed ma-safe-place-options a-spacing-none"><label for="HOUSE-MAILROOM"><input id="HOUSE-MAILROOM" type="radio" name="preferredDeliveryLocationHOUSE" value="MAILROOM"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                              Mailroom
+                                            </span></label></div>
+  
+                                        <div data-a-input-name="preferredDeliveryLocationHOUSE" class="a-radio ma-pdl-safe-location-NONE preferred-delivery-location-option-collapsed ma-safe-place-options a-spacing-none"><label for="HOUSE-NONE"><input id="HOUSE-NONE" type="radio" name="preferredDeliveryLocationHOUSE" value="NONE"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                              Turn off do not disturb delivery
+                                            </span></label></div>
+                                      </div>
+                                    </div>
+                                    <div class="a-row"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-extend-header" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Show more options&quot;, &quot;collapse_prompt&quot;:&quot;Show less options&quot;}" data-csa-c-id="5evr3-sall4y-j36ri4-2hvoet"><i class="a-icon a-icon-extender-expand"></i><span class="a-expander-prompt">Show more options</span></a></div>
+                                  </div>
+                                </span></div>
+                            </div>
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="business_hrs_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="wcdfgw-voeom4-oybjgg-7m9g83"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Can you receive deliveries at this address on weekends?</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-business_hrs_group-business_hrs-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-business_hrs_group-business_hrs-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-business_hrs_group-business_hrs-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-business_hrs_group-business_hrs-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="overflow: hidden; display: none;">
+                            <div class="a-row">
+                              <div class="a-column a-span6 weekend-delivery-same-row-sat-sun-column">
+                                <div class="a-row a-spacing-micro"><span class="a-size-base a-text-bold">Saturdays</span></div>
+                                <div class="a-row">
+                                  <ul class="a-unordered-list a-nostyle a-button-list a-declarative a-button-toggle-group a-horizontal" role="radiogroup" data-csa-c-func-deps="aui-da-a-button-group" data-csa-c-type="widget" data-csa-interaction-events="click" data-action="a-button-group" data-a-button-group="{&quot;name&quot;:&quot;SATHours&quot;}" data-csa-c-id="rv7hyp-gjouwm-s8h8qb-1bp86v">
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SATs-closed weekend-delivery-preference-button"><span class="a-button-inner"><button name="closed" class="a-button-text a-text-center" type="button" value="No">No</button></span></span></span></li>
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SATs-open weekend-delivery-preference-button"><span class="a-button-inner"><button name="open" class="a-button-text a-text-center" type="button" value="Yes">Yes</button></span></span></span></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="a-column a-span6 weekend-delivery-same-row-sat-sun-column">
+                                <div class="a-row a-spacing-micro"><span class="a-size-base a-text-bold">Sundays</span></div>
+                                <div class="a-row">
+                                  <ul class="a-unordered-list a-nostyle a-button-list a-declarative a-button-toggle-group a-horizontal" role="radiogroup" data-csa-c-func-deps="aui-da-a-button-group" data-csa-c-type="widget" data-csa-interaction-events="click" data-action="a-button-group" data-a-button-group="{&quot;name&quot;:&quot;SUNHours&quot;}" data-csa-c-id="pdybgs-2j1iun-c1pxwx-s7degh">
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SUNs-closed weekend-delivery-preference-button"><span class="a-button-inner"><button name="closed" class="a-button-text a-text-center" type="button" value="No">No</button></span></span></span></li>
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SUNs-open weekend-delivery-preference-button"><span class="a-button-inner"><button name="open" class="a-button-text a-text-center" type="button" value="Yes">Yes</button></span></span></span></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div><input type="hidden" name="" value="Not available on Saturdays and Sundays" class="ma-business-hours-saved-value-00"><input type="hidden" name="" value="Not available on Saturdays, Available on Sundays" class="ma-business-hours-saved-value-01"><input type="hidden" name="" value="Not available on Saturdays" class="ma-business-hours-saved-value-02"><input type="hidden" name="" value="Available on Saturdays, Not available on Sundays" class="ma-business-hours-saved-value-10"><input type="hidden" name="" value="Available on Saturdays and Sundays" class="ma-business-hours-saved-value-11"><input type="hidden" name="" value="Available on Saturdays" class="ma-business-hours-saved-value-12"><input type="hidden" name="" value="Not available on Sundays" class="ma-business-hours-saved-value-20"><input type="hidden" name="" value="Available on Sundays" class="ma-business-hours-saved-value-21"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-00"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-01"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-02"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-10"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-11"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-12"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-20"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-21">
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="address_instructions_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="6j8imn-hhlh22-oywobi-s50cu0"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Share additional information to find this address</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-address_instructions_group-address_instructions-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-address_instructions_group-address_instructions-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="display:none">
+                            <div class="a-row"><span class="a-declarative" data-action="address-instructions-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-address-instructions-action" data-address-instructions-action="{}" data-csa-c-id="gx9h4u-pq579n-p5mmq1-k5tiec">
+                                <div class="a-input-text-wrapper ma-address-instructions-input"><textarea maxlength="255" placeholder="Provide details such as building description, a nearby landmark, or other navigation instructions." rows="3" name="freeTextInstruction" spellcheck="true" class="a-form-normal"></textarea></div>
+                              </span></div>
+                          </div>
+                        </div><!-- Link for show more attributes under current property type. -->
+                        <div class="a-row aok-hidden">
+                          <div class="a-row a-spacing-top-base"><span class="a-declarative" data-action="property-type-add-more-link-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-property-type-add-more-link-action" data-property-type-add-more-link-action="{}" data-csa-c-id="cvoepz-rd8qnq-dna3ul-vhxfwb">
+                              <!-- If Treatment 2 is enabled, then all options will be shown, in that case no need to show link for add more instructions. -->
+                              <!-- If total number of questions are equal to the number of questions displayed, in that case no need to show link for add more instructions. -->
+                              <a class="a-link-normal ma-property-type-add-more-link aok-hidden" href="#">Add more instructions</a>
+                            </span></div>
+                          <div class="a-row a-spacing-top-micro"><span class="a-size-base a-color-secondary ma-property-type-add-more-link-help-text aok-hidden">For example, navigation instructions</span></div>
+                        </div>
+                      </div>
+                      <div aria-live="polite" class="a-section ma-property-type-form-block ma-apartment-form-block aok-hidden ma-form-section-without-spacing" aria-hidden="true">
+                        <!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="preferred_delivery_locations_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="true" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="ucwkva-gp491c-q172my-peat86"><i class="a-icon a-icon-section-collapse"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Select your do not disturb delivery preference</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="true" class="a-expander-content a-expander-section-content a-section-expander-inner">
+                            <div class="a-row">
+                              <div class="a-row ma-personalised-cdp-pdl-options"><span class="a-declarative" data-action="preferred-delivery-location" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-preferred-delivery-location" data-preferred-delivery-location="{}" data-csa-c-id="76l075-9jjai1-80sgr9-jwxkaa">
+                                  <!-- This is to support the requirement where selected option should always come on top -->
+                                  <!-- All remaining options which are eligible for given property type comes here -->
+  
+                                  <div data-a-input-name="preferredDeliveryLocationAPARTMENT" class="a-radio ma-pdl-safe-location-FRONTDOOR ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationAPARTMENT" value="FRONTDOOR"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Front door
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationAPARTMENT" class="a-radio ma-pdl-safe-location-SECURITY_DESK ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationAPARTMENT" value="SECURITY_DESK"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        With a security guard
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationAPARTMENT" class="a-radio ma-pdl-safe-location-MAILROOM ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationAPARTMENT" value="MAILROOM"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Mailroom
+                                      </span></label></div><!-- If property type is empty or it is OTHER then show no Preferred Button here -->
+                                  <div data-a-expander-name="ma-pdl-show-more-option" class="a-row a-expander-container a-expander-extend-container">
+                                    <div class="a-row">
+                                      <div aria-expanded="false" class="a-expander-content a-expander-extend-content" style="display:none">
+                                        <!-- Each items which are not eligible goes here along with No preference button -->
+  
+                                        <div data-a-input-name="preferredDeliveryLocationAPARTMENT" class="a-radio ma-pdl-safe-location-MAILBOX preferred-delivery-location-option-collapsed ma-safe-place-options a-spacing-none"><label for="APARTMENT-MAILBOX"><input id="APARTMENT-MAILBOX" type="radio" name="preferredDeliveryLocationAPARTMENT" value="MAILBOX"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                              Mailbox
+                                            </span></label></div>
+  
+                                        <div data-a-input-name="preferredDeliveryLocationAPARTMENT" class="a-radio ma-pdl-safe-location-NONE preferred-delivery-location-option-collapsed ma-safe-place-options a-spacing-none"><label for="APARTMENT-NONE"><input id="APARTMENT-NONE" type="radio" name="preferredDeliveryLocationAPARTMENT" value="NONE"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                              Turn off do not disturb delivery
+                                            </span></label></div>
+                                      </div>
+                                    </div>
+                                    <div class="a-row"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-extend-header" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Show more options&quot;, &quot;collapse_prompt&quot;:&quot;Show less options&quot;}" data-csa-c-id="yjdrxs-sndn09-tbdxba-t6rw33"><i class="a-icon a-icon-extender-expand"></i><span class="a-expander-prompt">Show more options</span></a></div>
+                                  </div>
+                                </span></div>
+                            </div>
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="business_hrs_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="adptq-zoqi2-7pld10-1n25a3"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Can you receive deliveries at this address on weekends?</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-business_hrs_group-business_hrs-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-business_hrs_group-business_hrs-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-business_hrs_group-business_hrs-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-business_hrs_group-business_hrs-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="display:none">
+                            <div class="a-row">
+                              <div class="a-column a-span6 weekend-delivery-same-row-sat-sun-column">
+                                <div class="a-row a-spacing-micro"><span class="a-size-base a-text-bold">Saturdays</span></div>
+                                <div class="a-row">
+                                  <ul class="a-unordered-list a-nostyle a-button-list a-declarative a-button-toggle-group a-horizontal" role="radiogroup" data-csa-c-func-deps="aui-da-a-button-group" data-csa-c-type="widget" data-csa-interaction-events="click" data-action="a-button-group" data-a-button-group="{&quot;name&quot;:&quot;SATHours&quot;}" data-csa-c-id="dxux0p-cjx80b-apxqpf-x4m9dz">
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SATs-closed weekend-delivery-preference-button"><span class="a-button-inner"><button name="closed" class="a-button-text a-text-center" type="button" value="No">No</button></span></span></span></li>
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SATs-open weekend-delivery-preference-button"><span class="a-button-inner"><button name="open" class="a-button-text a-text-center" type="button" value="Yes">Yes</button></span></span></span></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="a-column a-span6 weekend-delivery-same-row-sat-sun-column">
+                                <div class="a-row a-spacing-micro"><span class="a-size-base a-text-bold">Sundays</span></div>
+                                <div class="a-row">
+                                  <ul class="a-unordered-list a-nostyle a-button-list a-declarative a-button-toggle-group a-horizontal" role="radiogroup" data-csa-c-func-deps="aui-da-a-button-group" data-csa-c-type="widget" data-csa-interaction-events="click" data-action="a-button-group" data-a-button-group="{&quot;name&quot;:&quot;SUNHours&quot;}" data-csa-c-id="v5g2im-3di6fs-lu7dyd-vdsos">
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SUNs-closed weekend-delivery-preference-button"><span class="a-button-inner"><button name="closed" class="a-button-text a-text-center" type="button" value="No">No</button></span></span></span></li>
+                                    <li class="weekend-delivery-same-row-sat-sun-width"><span class="a-list-item"><span class="a-button a-button-toggle ma-SUNs-open weekend-delivery-preference-button"><span class="a-button-inner"><button name="open" class="a-button-text a-text-center" type="button" value="Yes">Yes</button></span></span></span></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div><input type="hidden" name="" value="Not available on Saturdays and Sundays" class="ma-business-hours-saved-value-00"><input type="hidden" name="" value="Not available on Saturdays, Available on Sundays" class="ma-business-hours-saved-value-01"><input type="hidden" name="" value="Not available on Saturdays" class="ma-business-hours-saved-value-02"><input type="hidden" name="" value="Available on Saturdays, Not available on Sundays" class="ma-business-hours-saved-value-10"><input type="hidden" name="" value="Available on Saturdays and Sundays" class="ma-business-hours-saved-value-11"><input type="hidden" name="" value="Available on Saturdays" class="ma-business-hours-saved-value-12"><input type="hidden" name="" value="Not available on Sundays" class="ma-business-hours-saved-value-20"><input type="hidden" name="" value="Available on Sundays" class="ma-business-hours-saved-value-21"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-00"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-01"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-02"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-10"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-11"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-12"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-20"><input type="hidden" name="" class="ma-business-hours-saved-value-fri-sat-21">
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="address_instructions_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="oxol60-n4fbwz-r22imv-fgm2us"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Share additional information to find this address</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-address_instructions_group-address_instructions-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-address_instructions_group-address_instructions-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="display:none">
+                            <div class="a-row"><span class="a-declarative" data-action="address-instructions-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-address-instructions-action" data-address-instructions-action="{}" data-csa-c-id="rahorc-g76f4w-m5ppe7-2izmyh">
+                                <div class="a-input-text-wrapper ma-address-instructions-input"><textarea maxlength="255" placeholder="Provide details such as building description, a nearby landmark, or other navigation instructions." rows="3" name="freeTextInstruction" spellcheck="true" class="a-form-normal"></textarea></div>
+                              </span></div>
+                          </div>
+                        </div><!-- Link for show more attributes under current property type. -->
+                        <div class="a-row aok-hidden">
+                          <div class="a-row a-spacing-top-base"><span class="a-declarative" data-action="property-type-add-more-link-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-property-type-add-more-link-action" data-property-type-add-more-link-action="{}" data-csa-c-id="awec3m-3vtfev-n7la0h-qn88zi">
+                              <!-- If Treatment 2 is enabled, then all options will be shown, in that case no need to show link for add more instructions. -->
+                              <!-- If total number of questions are equal to the number of questions displayed, in that case no need to show link for add more instructions. -->
+                              <a class="a-link-normal ma-property-type-add-more-link aok-hidden" href="#">Add more instructions</a>
+                            </span></div>
+                          <div class="a-row a-spacing-top-micro"><span class="a-size-base a-color-secondary ma-property-type-add-more-link-help-text aok-hidden">For example, navigation instructions</span></div>
+                        </div>
+                      </div>
+                      <div aria-live="polite" class="a-section ma-property-type-form-block ma-business-form-block ma-form-section-without-spacing aok-hidden" aria-hidden="true">
+                        <!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="preferred_delivery_locations_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="true" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="ak97fa-ukc1g0-chxxyt-pzfgho"><i class="a-icon a-icon-section-collapse"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Select your do not disturb delivery preference</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="true" class="a-expander-content a-expander-section-content a-section-expander-inner">
+                            <div class="a-row">
+                              <div class="a-row ma-personalised-cdp-pdl-options"><span class="a-declarative" data-action="preferred-delivery-location" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-preferred-delivery-location" data-preferred-delivery-location="{}" data-csa-c-id="kcrhbn-wvfdfo-4eo19d-r5na5s">
+                                  <!-- This is to support the requirement where selected option should always come on top -->
+                                  <!-- All remaining options which are eligible for given property type comes here -->
+  
+                                  <div data-a-input-name="preferredDeliveryLocationBUSINESS" class="a-radio ma-pdl-safe-location-FRONTDOOR ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationBUSINESS" value="FRONTDOOR"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Front door
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationBUSINESS" class="a-radio ma-pdl-safe-location-SECURITY_DESK ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationBUSINESS" value="SECURITY_DESK"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        With a security guard
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationBUSINESS" class="a-radio ma-pdl-safe-location-MAILROOM ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationBUSINESS" value="MAILROOM"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Mailroom
+                                      </span></label></div><!-- If property type is empty or it is OTHER then show no Preferred Button here -->
+                                  <div data-a-expander-name="ma-pdl-show-more-option" class="a-row a-expander-container a-expander-extend-container">
+                                    <div class="a-row">
+                                      <div aria-expanded="false" class="a-expander-content a-expander-extend-content" style="display:none">
+                                        <!-- Each items which are not eligible goes here along with No preference button -->
+  
+                                        <div data-a-input-name="preferredDeliveryLocationBUSINESS" class="a-radio ma-pdl-safe-location-MAILBOX preferred-delivery-location-option-collapsed ma-safe-place-options a-spacing-none"><label for="BUSINESS-MAILBOX"><input id="BUSINESS-MAILBOX" type="radio" name="preferredDeliveryLocationBUSINESS" value="MAILBOX"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                              Mailbox
+                                            </span></label></div>
+  
+                                        <div data-a-input-name="preferredDeliveryLocationBUSINESS" class="a-radio ma-pdl-safe-location-NONE preferred-delivery-location-option-collapsed ma-safe-place-options a-spacing-none"><label for="BUSINESS-NONE"><input id="BUSINESS-NONE" type="radio" name="preferredDeliveryLocationBUSINESS" value="NONE"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                              Turn off do not disturb delivery
+                                            </span></label></div>
+                                      </div>
+                                    </div>
+                                    <div class="a-row"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-extend-header" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;Show more options&quot;, &quot;collapse_prompt&quot;:&quot;Show less options&quot;}" data-csa-c-id="3im85h-qdg1gm-7694z0-6pvwsd"><i class="a-icon a-icon-extender-expand"></i><span class="a-expander-prompt">Show more options</span></a></div>
+                                  </div>
+                                </span></div>
+                            </div>
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="delivery_hours_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="k11svi-sxx1n4-6kt46n-r61v43"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">When is this address open for deliveries?</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row ma-delivery_hours_group-saved-label aok-hidden">
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label">Monday - Friday</span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value">Open</span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label">Saturday - Sunday</span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value">Closed</span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="display:none">
+                            <div class="a-row">
+                              <div class="a-section a-spacing-none ma-cdp-business-days-section"><span class="a-declarative" data-action="ma-cdp-business-days-checkbox-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-ma-cdp-business-days-checkbox-action" data-ma-cdp-business-days-checkbox-action="{}" data-csa-c-id="m0z5h0-81qx7e-ar286j-pqrv80"><input type="hidden" name="sectionName" value="weekday">
+                                  <input type="hidden" name="weekdayList" id="weekdayList" value="[MON, TUE, WED, THU, FRI]">
+                                  <input type="hidden" name="maxClosedWeekdays" value="3">
+  
+                                  <div data-a-input-name="MON" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-MON ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_MON_delivery-instructions-cdpViewId_BUSINESS"><input id="business_hours_MON_delivery-instructions-cdpViewId_BUSINESS" type="checkbox" name="MON" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Monday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="TUE" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-TUE ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_TUE_delivery-instructions-cdpViewId_BUSINESS"><input id="business_hours_TUE_delivery-instructions-cdpViewId_BUSINESS" type="checkbox" name="TUE" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Tuesday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="WED" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-WED ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_WED_delivery-instructions-cdpViewId_BUSINESS"><input id="business_hours_WED_delivery-instructions-cdpViewId_BUSINESS" type="checkbox" name="WED" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Wednesday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="THU" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-THU ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_THU_delivery-instructions-cdpViewId_BUSINESS"><input id="business_hours_THU_delivery-instructions-cdpViewId_BUSINESS" type="checkbox" name="THU" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Thursday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="FRI" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-FRI ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_FRI_delivery-instructions-cdpViewId_BUSINESS"><input id="business_hours_FRI_delivery-instructions-cdpViewId_BUSINESS" type="checkbox" name="FRI" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Friday
+                                      </span></label></div>
+                                  <input type="hidden" name="sectionName" value="weekend">
+                                  <input type="hidden" name="weekendList" id="weekendList" value="[SAT, SUN]">
+  
+                                  <div data-a-input-name="SAT" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-SAT ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_SAT_delivery-instructions-cdpViewId_BUSINESS"><input id="business_hours_SAT_delivery-instructions-cdpViewId_BUSINESS" type="checkbox" name="SAT" value=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Saturday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="SUN" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-SUN ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_SUN_delivery-instructions-cdpViewId_BUSINESS"><input id="business_hours_SUN_delivery-instructions-cdpViewId_BUSINESS" type="checkbox" name="SUN" value=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Sunday
+                                      </span></label></div>
+                                </span>
+                                <div class="a-box a-alert-inline a-alert-inline-warning aok-hidden ma-cdp-business-hours-closed-alert" aria-live="polite" aria-atomic="true">
+                                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                                    <div class="a-alert-content">Closing multiple days will affect delivery speed</div>
+                                  </div>
+                                </div>
+                              </div><input type="hidden" name="" class="ma-exception-dates-label"><input type="hidden" name="" value="Closed" class="ma-exception-dates-saved-value-0"><input type="hidden" name="" value="Open" class="ma-exception-dates-saved-value-1"><input type="hidden" name="" class="ma-exception-dates-saved-value-2"><input type="hidden" name="" value="Thursday" class="ma-business-hours-THU"><input type="hidden" name="" value="Tuesday" class="ma-business-hours-TUE"><input type="hidden" name="" value="Wednesday" class="ma-business-hours-WED"><input type="hidden" name="" value="Saturday" class="ma-business-hours-SAT"><input type="hidden" name="" value="Friday" class="ma-business-hours-FRI"><input type="hidden" name="" value="Monday" class="ma-business-hours-MON"><input type="hidden" name="" value="Sunday" class="ma-business-hours-SUN"><input type="hidden" name="" value="Closed" class="ma-business-hours-closed"><input type="hidden" name="" value="Open" class="ma-business-hours-open"><input type="hidden" name="" class="ma-business-hours-not-provided">
+                            </div>
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="address_instructions_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="43rnxn-7z7o2n-63xnuw-4afe9i"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Share additional information to find this address</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-address_instructions_group-address_instructions-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-address_instructions_group-address_instructions-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="display:none">
+                            <div class="a-row"><span class="a-declarative" data-action="address-instructions-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-address-instructions-action" data-address-instructions-action="{}" data-csa-c-id="pxbk8-vkshdz-57f9hf-cd90nz">
+                                <div class="a-input-text-wrapper ma-address-instructions-input"><textarea maxlength="255" placeholder="Provide details such as building description, a nearby landmark, or other navigation instructions." rows="3" name="freeTextInstruction" spellcheck="true" class="a-form-normal"></textarea></div>
+                              </span></div>
+                          </div>
+                        </div><!-- Link for show more attributes under current property type. -->
+                        <div class="a-row aok-hidden">
+                          <div class="a-row a-spacing-top-base"><span class="a-declarative" data-action="property-type-add-more-link-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-property-type-add-more-link-action" data-property-type-add-more-link-action="{}" data-csa-c-id="q06ocn-ve0e7z-8ng67b-to3ax7">
+                              <!-- If Treatment 2 is enabled, then all options will be shown, in that case no need to show link for add more instructions. -->
+                              <!-- If total number of questions are equal to the number of questions displayed, in that case no need to show link for add more instructions. -->
+                              <a class="a-link-normal ma-property-type-add-more-link aok-hidden" href="#">Add more instructions</a>
+                            </span></div>
+                          <div class="a-row a-spacing-top-micro"><span class="a-size-base a-color-secondary ma-property-type-add-more-link-help-text aok-hidden">For example, navigation instructions</span></div>
+                        </div>
+                      </div>
+                      <div aria-live="polite" class="a-section ma-property-type-form-block ma-other-form-block ma-form-section-without-spacing aok-hidden" aria-hidden="true">
+                        <!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="preferred_delivery_locations_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="2dqex1-aowp1k-6upl9q-e4ipzv"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Select your do not disturb delivery preference</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-preferred_delivery_locations_group-preferred_delivery_locations-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner a-expander-content-expanded" style="overflow: hidden; display: none;">
+                            <div class="a-row">
+                              <div class="a-row ma-personalised-cdp-pdl-options"><span class="a-declarative" data-action="preferred-delivery-location" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-preferred-delivery-location" data-preferred-delivery-location="{}" data-csa-c-id="mlox6z-czixsq-7trayi-j3o36b">
+                                  <!-- This is to support the requirement where selected option should always come on top -->
+                                  <!-- All remaining options which are eligible for given property type comes here -->
+  
+                                  <div data-a-input-name="preferredDeliveryLocationOTHER" class="a-radio ma-pdl-safe-location-FRONTDOOR ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationOTHER" value="FRONTDOOR"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Front door
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationOTHER" class="a-radio ma-pdl-safe-location-SECURITY_DESK ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationOTHER" value="SECURITY_DESK"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        With a security guard
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="preferredDeliveryLocationOTHER" class="a-radio ma-pdl-safe-location-MAILROOM ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationOTHER" value="MAILROOM"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Mailroom
+                                      </span></label></div><!-- If property type is empty or it is OTHER then show no Preferred Button here -->
+  
+                                  <div data-a-input-name="preferredDeliveryLocationOTHER" class="a-radio ma-pdl-safe-location-NONE ma-safe-place-options a-spacing-none"><label><input type="radio" name="preferredDeliveryLocationOTHER" value="NONE"><i class="a-icon a-icon-radio"></i><span class="a-label a-radio-label">
+                                        Turn off do not disturb delivery
+                                      </span></label></div>
+                                </span></div>
+                            </div>
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="delivery_hours_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="3s0n6f-supxgi-l4oofn-hmjnl4"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">When is this address open for deliveries?</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row ma-delivery_hours_group-saved-label aok-hidden">
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label">Monday - Friday</span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value">Open</span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label">Saturday - Sunday</span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value">Closed</span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                    <div class="a-row a-spacing-top-mini ma-delivery_hours_group-delivery_hours-summary-slot aok-hidden">
+                                      <div class="a-column a-span5"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-label"></span></div>
+                                      <div class="a-column a-span7 a-text-right a-span-last"><span class="a-size-small ma-delivery_hours_group-delivery_hours-saved-value"></span></div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="overflow: hidden; display: none;">
+                            <div class="a-row">
+                              <div class="a-section a-spacing-none ma-cdp-business-days-section"><span class="a-declarative" data-action="ma-cdp-business-days-checkbox-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-ma-cdp-business-days-checkbox-action" data-ma-cdp-business-days-checkbox-action="{}" data-csa-c-id="u0dum8-oc6znb-6bktyd-vq6w6f"><input type="hidden" name="sectionName" value="weekday">
+                                  <input type="hidden" name="weekdayList" id="weekdayList" value="[MON, TUE, WED, THU, FRI]">
+                                  <input type="hidden" name="maxClosedWeekdays" value="3">
+  
+                                  <div data-a-input-name="MON" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-MON ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_MON_delivery-instructions-cdpViewId_OTHER"><input id="business_hours_MON_delivery-instructions-cdpViewId_OTHER" type="checkbox" name="MON" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Monday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="TUE" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-TUE ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_TUE_delivery-instructions-cdpViewId_OTHER"><input id="business_hours_TUE_delivery-instructions-cdpViewId_OTHER" type="checkbox" name="TUE" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Tuesday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="WED" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-WED ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_WED_delivery-instructions-cdpViewId_OTHER"><input id="business_hours_WED_delivery-instructions-cdpViewId_OTHER" type="checkbox" name="WED" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Wednesday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="THU" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-THU ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_THU_delivery-instructions-cdpViewId_OTHER"><input id="business_hours_THU_delivery-instructions-cdpViewId_OTHER" type="checkbox" name="THU" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Thursday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="FRI" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-FRI ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_FRI_delivery-instructions-cdpViewId_OTHER"><input id="business_hours_FRI_delivery-instructions-cdpViewId_OTHER" type="checkbox" name="FRI" value="" checked=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Friday
+                                      </span></label></div>
+                                  <input type="hidden" name="sectionName" value="weekend">
+                                  <input type="hidden" name="weekendList" id="weekendList" value="[SAT, SUN]">
+  
+                                  <div data-a-input-name="SAT" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-SAT ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_SAT_delivery-instructions-cdpViewId_OTHER"><input id="business_hours_SAT_delivery-instructions-cdpViewId_OTHER" type="checkbox" name="SAT" value=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Saturday
+                                      </span></label></div>
+  
+                                  <div data-a-input-name="SUN" class="a-checkbox a-checkbox-fancy ma-cdp-business-hours-SUN ma-cdp-business-hours-checkbox a-spacing-top-mini"><label for="business_hours_SUN_delivery-instructions-cdpViewId_OTHER"><input id="business_hours_SUN_delivery-instructions-cdpViewId_OTHER" type="checkbox" name="SUN" value=""><i class="a-icon a-icon-checkbox"></i><span class="a-label a-checkbox-label">
+                                        Sunday
+                                      </span></label></div>
+                                </span>
+                                <div class="a-box a-alert-inline a-alert-inline-warning aok-hidden ma-cdp-business-hours-closed-alert" aria-live="polite" aria-atomic="true">
+                                  <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+                                    <div class="a-alert-content">Closing multiple days will affect delivery speed</div>
+                                  </div>
+                                </div>
+                              </div><input type="hidden" name="" class="ma-exception-dates-label"><input type="hidden" name="" value="Closed" class="ma-exception-dates-saved-value-0"><input type="hidden" name="" value="Open" class="ma-exception-dates-saved-value-1"><input type="hidden" name="" class="ma-exception-dates-saved-value-2"><input type="hidden" name="" value="Thursday" class="ma-business-hours-THU"><input type="hidden" name="" value="Tuesday" class="ma-business-hours-TUE"><input type="hidden" name="" value="Wednesday" class="ma-business-hours-WED"><input type="hidden" name="" value="Saturday" class="ma-business-hours-SAT"><input type="hidden" name="" value="Friday" class="ma-business-hours-FRI"><input type="hidden" name="" value="Monday" class="ma-business-hours-MON"><input type="hidden" name="" value="Sunday" class="ma-business-hours-SUN"><input type="hidden" name="" value="Closed" class="ma-business-hours-closed"><input type="hidden" name="" value="Open" class="ma-business-hours-open"><input type="hidden" name="" class="ma-business-hours-not-provided">
+                            </div>
+                          </div>
+                        </div><!-- Considering the importance of shown questions as high and hidden questions as low. -->
+                        <!-- If T2 is on, then consider all the questions as high. -->
+                        <!-- In T1 for all the high priority questions make sure they are always expanded only. -->
+                        <!-- Hide the expander when priority of the group is low. -->
+                        <!-- @AttributeGroup group model -->
+                        <!-- Current property type for which group expander is loading. Will be blank for default CDP. -->
+                        <!-- Property whether the group is hidden or not. -->
+                        <!-- Current expander should be expanded or closed. -->
+                        <div data-a-expander-name="address_instructions_group_desktop" class="a-row a-expander-container a-expander-section-container ma-attribute-group-expander a-section-expander-container"><a data-csa-c-func-deps="aui-da-a-expander-toggle" data-csa-c-type="widget" data-csa-interaction-events="click" aria-expanded="false" role="button" href="javascript:void(0)" data-action="a-expander-toggle" class="a-expander-header a-declarative a-expander-section-header a-link-section-expander a-size-medium" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;&quot;, &quot;collapse_prompt&quot;:&quot;&quot;}" data-csa-c-id="avdv20-rozcsy-gxr2lx-xzxqyg"><i class="a-icon a-icon-section-expand"></i><span class="a-expander-prompt">
+                              <div class="a-row">
+                                <div class="a-row"><span class="a-size-base a-text-bold">Share additional information to find this address</span></div>
+                                <div class="ma-expander-summary-content">
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-saved-label ma-cdp-text-overflow"><span class="a-size-base"></span><span class="a-size-base ma-address_instructions_group-address_instructions-saved-value"></span></div>
+                                  <div class="a-row a-spacing-top-mini aok-hidden ma-address_instructions_group-address_instructions-neighbor-label ma-cdp-text-overflow"><span class="a-size-base">Leave with neighbour: </span><span class="a-size-base ma-address_instructions_group-address_instructions-neighbor-value"></span></div>
+                                </div>
+                              </div>
+                            </span></a>
+                          <div aria-expanded="false" class="a-expander-content a-expander-section-content a-section-expander-inner" style="display:none">
+                            <div class="a-row"><span class="a-declarative" data-action="address-instructions-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-address-instructions-action" data-address-instructions-action="{}" data-csa-c-id="ikel1m-bepvx-thafkj-jhhy6x">
+                                <div class="a-input-text-wrapper ma-address-instructions-input"><textarea maxlength="255" placeholder="Provide details such as building description, a nearby landmark, or other navigation instructions." rows="3" name="freeTextInstruction" spellcheck="true" class="a-form-normal"></textarea></div>
+                              </span></div>
+                          </div>
+                        </div><!-- Link for show more attributes under current property type. -->
+                        <div class="a-row aok-hidden">
+                          <div class="a-row a-spacing-top-base"><span class="a-declarative" data-action="property-type-add-more-link-action" data-csa-c-type="widget" data-csa-c-func-deps="aui-da-property-type-add-more-link-action" data-property-type-add-more-link-action="{}" data-csa-c-id="98m7mi-alu16q-pias3e-s0vaa7">
+                              <!-- If Treatment 2 is enabled, then all options will be shown, in that case no need to show link for add more instructions. -->
+                              <!-- If total number of questions are equal to the number of questions displayed, in that case no need to show link for add more instructions. -->
+                              <a class="a-link-normal ma-property-type-add-more-link aok-hidden" href="#">Add more instructions</a>
+                            </span></div>
+                          <div class="a-row a-spacing-top-micro"><span class="a-size-base a-color-secondary ma-property-type-add-more-link-help-text aok-hidden">For example, navigation instructions</span></div>
+                        </div>
+                      </div><input type="hidden" name="appAction" value="csrfTokenValue"><input type="hidden" name="appActionToken" value="g7pIzok6LSO4410vzfyK7a5fWHBWmAq7jLrDfGZUYssOAAAAAQAAAABkk56gcmF3AAAAAIE+olP1n3HyRAsF6sa6ow==">
+                    </div>
+  
+                    <div class="a-row a-spacing-none a-spacing-top-base ma-cdp-disclaimer">
+                      <span class="a-size-small a-color-tertiary a-text-italic">
+                        Your instructions help us deliver to this address. However, deliveries may not always follow all the instructions.
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="a-section a-spacing-top-micro address-ui-widgets-inline-error-alert">
+          <div id="address-ui-widgets-inline-delivery-instructions-load-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden" aria-live="assertive" role="alert">
+            <div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i>
+              <div class="a-alert-content">
+                <div class="a-section">Sorry, there was a problem loading delivery instructions. Please try again.</div>
+              </div>
+            </div>
+          </div>
+        </div><span class="a-declarative" data-action="form-submit-button-click" data-form-submit-button-click="{}"><span id="address-ui-widgets-form-submit-button" class="a-button a-button-primary"><span class="a-button-inner"><input class="a-button-input" type="submit" aria-labelledby="address-ui-widgets-form-submit-button-announce"><span id="address-ui-widgets-form-submit-button-announce" class="a-button-text" aria-hidden="true">Use this address</span></span></span></span><input type="hidden" name="address-ui-widgets-addressFormButtonText" value="useThisAddress" style=""><input type="hidden" name="address-ui-widgets-addressFormHideHeading" value="false" style=""><input type="hidden" name="address-ui-widgets-addressFormHideSubmitButton" value="false" style=""><input type="hidden" name="address-ui-widgets-enableAddressDetails" value="true" style=""><input type="hidden" name="address-ui-widgets-returnLegacyAddressID" value="false" style=""><input type="hidden" name="address-ui-widgets-enableDeliveryInstructions" value="true" style=""><input type="hidden" name="address-ui-widgets-enableAddressWizardInlineSuggestions" value="false" style=""><input type="hidden" name="address-ui-widgets-enableEmailAddress" value="false" style=""><input type="hidden" name="address-ui-widgets-enableAddressTips" value="false" style=""><input type="hidden" name="address-ui-widgets-amazonBusinessGroupId" style=""><input type="hidden" name="address-ui-widgets-clientName" value="RetailWebsite9" style=""><input type="hidden" name="address-ui-widgets-enableAddressWizardForm" value="true" style=""><input type="hidden" name="address-ui-widgets-delivery-instructions-data" style="" value="{&quot;saveData&quot;:{&quot;deliveryProfileContext&quot;:{&quot;deviceType&quot;:&quot;desktop&quot;,&quot;ingressPointType&quot;:&quot;ADD_ADDRESS_FORM_RetailWebsite&quot;,&quot;clientParams&quot;:{}},&quot;oldPropertyType&quot;:&quot;&quot;,&quot;addressAttributesEnvelope&quot;:&quot;[]&quot;,&quot;protoAasAddressAttributes&quot;:&quot;{\&quot;attribute\&quot;:[{\&quot;name\&quot;:\&quot;PROPERTY_TYPE\&quot;,\&quot;source\&quot;:{\&quot;name\&quot;:\&quot;CUSTOMER\&quot;},\&quot;isActive\&quot;:true,\&quot;updatedTimeStamp\&quot;:1687396011130,\&quot;value\&quot;:{\&quot;stringValue\&quot;:\&quot;HOUSE\&quot;}}]}&quot;,&quot;isPersonalisationEnabled&quot;:true},&quot;formData&quot;:{&quot;addressAttributesData&quot;:[],&quot;protoAttributesDataList&quot;:[]},&quot;isBusinessHoursSaved&quot;:false,&quot;initialCountryCode&quot;:&quot;IN&quot;}"><input type="hidden" name="address-ui-widgets-address-wizard-interaction-id" value="8b406f17-55df-4363-a9d1-c601e371000b" style=""><input type="hidden" name="address-ui-widgets-obfuscated-customerId" value="A36H3VQHM26XMV" style=""><input type="hidden" name="address-ui-widgets-locationData" style=""><input type="hidden" name="address-ui-widgets-enableLatestAddressWizardForm" value="true" style=""><input type="hidden" name="address-ui-widgets-avsSuppressSoftblock" value="false" style=""><input type="hidden" name="address-ui-widgets-avsSuppressSuggestion" value="false" style=""><input type="hidden" name="address-ui-widgets-csrfToken" value="g0uukoSH1KrSkJ7u2TGDKQ00bvR/oRMuwjqh2QLDYub3AAAAAQAAAABkk5xwcmF3AAAAAGfAMbiPfGfxPcX7XVH8kQ==" style=""><input type="hidden" name="address-ui-widgets-form-load-start-time" value="1687395440808" style=""><input type="hidden" name="address-ui-widgets-enableAddressFormPincodeFieldReordering" value="false" style=""><input type="hidden" name="address-ui-widgets-locale" style="">
+        <script type="a-state" data-a-state="{&quot;key&quot;:&quot;identity-address-ux-ajax-data&quot;}">{"identity-address-ux-ajax-auth-token":"eyJ6aXAiOiJERUYiLCJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiQTI1NktXIn0.cOk26qZwOOd7aIeVJE_8PdJrJtkQjNdkX2oTO1ym2a-HkHPrWDasQA.rq-pzjxs4AbY64t6.1tNs8Lz1nQplT5O-WXuAuPNi8KIozb25ZFmcloEdGxv2KDk3p68Mkf21sFzGzjZNcAU-T8hPjLhHaWvB1NhTF7ShrKzswROOEPpo_r0sxTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHjBEUJeDp2T6Lwlumw__UBaE4678vWsDQTZh6CKC86q5A_-Yzv2nKWHf55BwI27hFAH0Ipx_-muN1Vd-4Erby9aQzZjbNhChQxmkauuJYN-2dEsJtx80-bFv96HNhhcODQi0WBm6qYXq7MgZ-AJYmgxxoEUy8csUI_DAMd89PX96YoG-YFDte-K_H003nDwdbzn4ubbTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHVkCi_Qsr7xpjucoIvqKGmd8xpVoVhPNmSL70EgujocXgKEHtIkJ3A-ryuxszxeWgtA6Ub3vJY98ZCFsz_ZfAExfDAUNZc71Hb04YcfbtpnoNm5cESmpgT9qjb60vs93Am7SpKVzVRNAbz2iIYByTprD92mRrt-7-1yzAL6sOol7zweVNRdbnfUPX_qk0I0iAI7zl1MpnOf4vdU_JiScemmulD6r5kqh9TDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHlb07wXGwq5vPFTwk960EMz8pQAETbvPncs1Ha-Hj9KUvw1BUHsLhMe4penJv-MKUEx70a2ANrZhFiNi8cInyQdrDJLnW6d5VoJruYyVHwrYY39Da0qUecOBKDBAZLDgEDtffwaaK_uw7rgCHeuDjuaCtJso9EHHGhTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuH0rPH8pYdHrhlyLfWmF-GnKN9Fq0PK3hR6JSf5UrBq3X2FRyNCXunXyJIj1qZzPb3ztMNpmOuaxlTgUAqy9uy5kh7exXMBr3GsND-bnTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHECcTntGf1gJTcJRTBIQoBI9-Zcqj5kpSL0vW31YSmVDVsyvU_yrdvIGUi9riSDcdS1mahft_CCoM3lWZDWag6WIuarSY_QIIUr4I8OyskQusAyRSAhTjL-0903t3FSVkhFhVSWsJV-in3ZG6KR0_n_SNMw2sxlFkPvENzIRTDNEpUTHQoQUJMHLrErGJyHg89uy71MyuHNojLzp2v_5ZP8wklMLIzCzC2m4kv4z5f3xOQK6PuNk3bWJA1bz6IjHqOOq2utq42y8M5WR9zEtnBI5Z977Tik0t8F3uLFDLO5dvnsCnr_S-vU6aG7GW-Ao3npq_7O4PU-zl6nfD3Vw8exyWoAr33xwyhD27sr6RkeY2AHEi1ev0_f7LvekM0_EaVBc3XuvlvXGj.017zfjOe67igaPqU0WHMtg","identity-address-ux-ajax-domain":"www.amazon.in"}</script>
+        <script type="a-state" data-a-state="{&quot;key&quot;:&quot;address-ui-widgets-from-view-state&quot;}">{"localizedCountryName":"India","marketplace-code":"IN","country-code":"IN","locale":"en_IN","client":"checkout","isEnabled":true,"js-experiments-map":"{\"CJP_ARX_POM_OPTIMIZATION_VECTOR_DRAWING_646751\" : \"null\", \"IDRISI_MAP_INTERACTION_TRACKER_542597\" : \"null\", \"CJ_ARX_NUMERIC_POSTAL_CODE_FORM_FIELD_IOS_673728\" : \"T1\", \"CJP_ARX_PIN_ON_MAPS_STATIC_PIN_GATING_646876\" : \"null\", \"ARX_BR_FLEXIBLE_ADDRESS_FORM_WW_441095\" : \"T1\", \"CJP_ARX_POM_ENABLE_SAUDI_POST_659065\" : \"null\", \"CJ_ARX_SWITCH_TO_MASH_BOTTOM_SHEET_FOR_LOCATION_PERMISSION_596845\" : \"null\", \"CJP_ARX_ZA_FRESA_ADDRESS_FORM_573477\" : \"C\", \"CJP_ARX_CL_FRESA_ADDRESS_FORM_573474\" : \"C\", \"ARX_PREPOPULATE_NAME_AND_PHONE_MOBILE_420358\" : \"null\", \"CJP_ARX_CDP_AUTO_EXPAND_DELIVERY_INSTRUCTIONS_667853\" : \"null\", \"CJP_ARX_BE_FLEXIBLE_ADDRESS_FORM_556125\" : \"T1\", \"CJ_ARX_SHOPPING_PORTAL_AJAX_COMPLETE_SHIFT_699695\" : \"null\", \"CJ_ARX_ADDRESS_NAME_PHONE_DYNAMIC_VALIDATION_556688\" : \"C\", \"ARX_AUTOFILL_POSTAL_CODE_401676\" : \"T1\", \"CJP_ARX_PIN_ON_MAPS_USABILITY_CHANGES_567020\" : \"null\", \"CJP_ARX_PIN_ON_MAPS_STATIC_PIN_645293\" : \"null\", \"CJP_ARX_NG_FRESA_ADDRESS_FORM_573476\" : \"C\", \"CJP_ARX_PIN_ON_MAPS_EXTEND_AUTOSUGGEST_RESULTS_630105\" : \"null\", \"CJP_ARX_POM_OPTIMIZATION_INTRODUCE_DMQ_646752\" : \"null\", \"ARX_ADDRESS_ZIP_DYNAMIC_VALIDATION_461972\" : \"T1\", \"PIN_ON_MAPS_FEATURE_377547\" : \"null\", \"ARX_REMOVE_AUTOFILL_DETECT_LOCATION_BR_489857\" : \"C\", \"ARX_DETECT_LOCATION_DESKTOP_416710\" : \"T3\", \"PIN_ON_MAPS_FEATURE_YAAB_FLOW_506342\" : \"null\", \"CJP_ARX_PARENT_PIN_ON_MAPS_USABILITY_CHANGES_611293\" : \"null\", \"CJP_ARX_PIN_ON_MAPS_BUGS_BATCH_1_566923\" : \"null\", \"CJP_ARX_CO_FRESA_ADDRESS_FORM_573475\" : \"C\", \"CJP_ARX_PIN_ON_MAPS_SEARCH_ADOPTION_TRACKER_596079\" : \"null\"}"}</script>
+      </div><input type="hidden" name="hasWorkingJavascript" value="1" style="">
+    </form>
+    
+    
+  
+    <!-- footer section -->
+
+    <footer class="section-p1">
+      <div class="col">
+        <img class="logof" src="img/logo (2).png"  alt="" />
+        <h4>contact</h4>
+        <p>
+          <strong>Address:</strong> Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Esse, laboriosam.
+        </p>
+        <p><strong>Phone:</strong> +917286040211/ 4538649853498</p>
+        <p><strong>Hours: </strong>6 to 18</p>
+        <div class="follow">
+          <h4>follow us</h4>
+          <div>
+            <i class="fa-brands fa-square-facebook fa-2x"></i>
+            <i class="fa-brands fa-square-instagram fa-2x"></i>
+            <i class="fa-brands fa-square-youtube fa-2x"></i>
+            <i class="fa-brands fa-square-twitter fa-2x"></i>
+            <i class="fa-brands fa-linkedin fa-2x"></i>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions Apply</a>
+        <a href="#">Contact Us</a>
+      </div>
+
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">view Cart</a>
+        <a href="#">wishlist</a>
+        <a href="#">track my order</a>
+        <a href="#">help desk</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>from the app store Googleplay Store</p>
+        <div class="row">
+          <img src="img/googleplay.png" alt="" />
+          <img src="img/appstore.png" alt="" />
+        </div>
+        <p>secure payment gateway</p>
+        <img src="img/payment.webp" alt="" />
+      </div>
+      <div class="copyriright">
+        <p><strong>©</strong> 2024 tech2 etc -html css ecommerce template</p>
+      </div>
+     
+    </footer>
+
+    <script src="/script.js"></script>
+    
+  </body>
+  
+</html>
